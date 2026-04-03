@@ -1,0 +1,20 @@
+## missi-user 16 BP2A.250605.031.A3 OS3.0.10.0.WOOMIXM release-keys
+- Manufacturer: xiaomi
+- Platform: mt6878
+- Codename: malachite
+- Brand: alps
+- Flavor: missi-user
+- Release Version: 16
+- Kernel Version: 6.1.138
+- Id: BP2A.250605.031.A3
+- Incremental: OS3.0.10.0.WOOMIXM
+- Tags: release-keys
+- CPU Abilist: arm64-v8a
+- A/B Device: true
+- Treble Device: true
+- Locale: en-GB
+- Screen Density: 520
+- Fingerprint: alps/miodm_malachite_global/malachite:14/UP1A.231005.007/OS3.0.10.0.WOOMIXM:user/release-keys
+- OTA version: 
+- Branch: missi-user-16-BP2A.250605.031.A3-OS3.0.10.0.WOOMIXM-release-keys
+- Repo: alps_malachite_dump

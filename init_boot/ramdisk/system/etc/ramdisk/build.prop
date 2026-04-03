@@ -1,0 +1,22 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.bootimage.brand=Xiaomi
+ro.product.bootimage.device=missi
+ro.product.bootimage.manufacturer=unknown
+ro.product.bootimage.model=missi
+ro.product.bootimage.name=missi
+ro.bootimage.build.date=Tue Feb 24 16:27:05 CST 2026
+ro.bootimage.build.date.utc=1771921625
+ro.bootimage.build.fingerprint=Xiaomi/missi/missi:16/BP2A.250605.031.A3/OS3.0.10.0.WOOMIXM:user/release-keys
+ro.bootimage.build.id=BP2A.250605.031.A3
+ro.bootimage.build.tags=release-keys
+ro.bootimage.build.type=user
+ro.bootimage.build.version.incremental=OS3.0.10.0.WOOMIXM
+ro.bootimage.build.version.release=16
+ro.bootimage.build.version.release_or_codename=16
+ro.bootimage.build.version.sdk=36
+ro.bootimage.build.version.sdk_full=36.0
+# end of file
+

@@ -1,0 +1,26 @@
+{
+    "Image_Build_IDs": {
+        "adsp": "LPAIDSP.HT.1.0-01090-LANAI-1", 
+        "adsp_evr": "LPAIDSP.HT.1.0.1-00022-palawan-1.114213.2", 
+        "aop": "AOP.HO.5.0-00813-LANAI_E-1.114213.2", 
+        "apps_LE": "LE.UM.7.3.1.r1-20100-genericarmv8-64.0-1", 
+        "boot": "BOOT.MXF.2.1-02016-LANAI-1.114213.2", 
+        "btfm_evr2": "BTFW.EVROS.2.0.0-00116-PATCHZ-1", 
+        "btfm_msl": "BTFW.MOSELLE.1.1.2-00054-PATCHZ-2", 
+        "btfm_msl_120": "BTFW.MOSELLE.1.2.0-00371-PATCHZ-1", 
+        "cdsp": "CDSP.HT.3.0-00948-LANAI-1", 
+        "common": "Milos.LA.2.0-00165-STD.PROD-2.114213.30", 
+        "cpucp": "CPUCP.FW.1.0-00141-LANAI.EXT-1.114213.2", 
+        "cpuss_vm": "CPUSS.CPUSYS.VM.1.0-00020-LANAI.EXT-1", 
+        "tz": "TZ.XF.5.28.0-00021-LANAIAAAAANAZT-1", 
+        "tz_apps": "TZ.APPS.1.28-00147-LANAIAAAAANAZT-1", 
+        "wlan_evr": "WLAN.EVR.1.0-01270-QCAEVRSWPLZ-1", 
+        "wlan_msl": "WLAN.MSL.3.0.1-00386-QCAMSLSWPLZ-1.114213.9"
+    }, 
+    "Metabuild_Info": {
+        "Meta_Build_ID": "Milos.LA.2.0-00165-STD.PROD-2.114213.30", 
+        "Product_Flavor": "asic", 
+        "Time_Stamp": "2025-12-25 14:49:19"
+    }, 
+    "Version": "1.0"
+}

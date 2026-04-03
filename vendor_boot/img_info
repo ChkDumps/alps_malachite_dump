@@ -1,0 +1,17 @@
+kernel=kernel
+ramdisk=ramdisk
+page_size=861090870
+kernel_size=4
+ramdisk_size=1073741824
+base_addr=0xffffffffffff9000
+kernel_offset=0x00008000
+ramdisk_offset=0x66f07000
+tags_offset=0x3d74e06f
+second=second.img
+second_size=44856530
+second_offset=0x746fdf62
+dt=dtb.img
+dtb_size=1311912748
+dtb_offset=
+board="N2"
+cmd_line=''

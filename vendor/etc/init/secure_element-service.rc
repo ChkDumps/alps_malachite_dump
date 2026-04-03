@@ -1,0 +1,15 @@
+service vendor.secure_element_hal_service /vendor/bin/hw/vendor.xiaomi.hardware.secure_element-service
+    class hal
+    user system
+    group system secure_element nfc
+    disabled
+
+# for o16 nfc one binary
+# o16 S99016AA1-cn  S99016MA1-cn  S99116AA1-global  S99016EA1-in
+# o16p S99116EA1-global   S99016IA1-in
+on property:ro.boot.board_id=S99016AA1
+    start vendor.secure_element_hal_service
+
+on property:ro.boot.board_id=S99016MA1
+    start vendor.secure_element_hal_service
+

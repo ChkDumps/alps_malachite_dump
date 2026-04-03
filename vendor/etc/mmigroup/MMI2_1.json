@@ -1,0 +1,64 @@
+{
+  "itemConfig": [
+    {
+      "showName": "SimCard_HotPlug"
+    },
+    {
+      "showName": "ESIMCard"
+    },
+    {
+      "showName": "ESIMFirmWareUpgrade"
+    },
+    {
+      "showName": "LCD",
+      "paramconfig": {
+        "auto_switch": false,
+        "lcd_pic": [
+          "01_O16_W255;120;2047;null;0;2000",
+          "02_O16_RGB255;120;2047;null;0;2000",
+          "03_O16_W255;120;147;null;0;2000",
+          "08_O16_guodu;120;8;null;0;2000",
+          "09_O16_guodu;60;8;null;0;2000",
+          "10_O16_W255;120;8;null;0;2000",
+          "16_O16_AOD;30;0;null;2;2000",
+          "17_O16_AOD;30;0;null;1;2000",
+          "19_O16_guodu;60;2047;null;0;2000",
+          "20_O16_guodu;120;4095;null;0;2000",
+          "22_N16_Border_V;120;2047;null;0;2000",
+          "24_O16_W32;60;2047;null;0;2000",
+          "25_O16_L0;60;4095;null;0;2000"
+        ]
+      }
+    },
+    {
+      "showName": "TouchScreen"
+    },
+    {
+      "showName": "Charge"
+    },
+    {
+      "showName": "Proximity"
+    },
+    {
+      "showName": "HeadSet"
+    },
+    {
+      "showName": "fingerprint_enroltest"
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": false
+      }
+    },
+    {
+      "showName": "Sar"
+    },
+    {
+      "showName": "ESIMFirmWareCheck"
+    },
+    {
+      "showName": "SIMCardTray"
+    }
+  ]
+}

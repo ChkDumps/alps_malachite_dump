@@ -1,0 +1,191 @@
+{
+  "mmigroupConfig": {
+    "hideDiskMountUi": true
+  },
+  "systemConfig": {
+    "Attestation": false,
+    "Widewine": false,
+    "IFAA_Version": false,
+    "FIDO_Version": false
+  },
+  "itemConfig": [
+    {
+      "showName": "VersionInfo",
+      "paramconfig": {
+        "AddInfo": {
+          "CPUID": "any",
+          "BuildNumber": "any",
+          "BaseBandVersion": "any",
+          "KernelVersion": "any",
+          "System_Verity": "true"
+        }
+      }
+    },
+    {
+      "showName": "SMARTPA"
+    },
+    {
+      "showName": "SimCard_HotPlug"
+    },
+    {
+      "showName": "ESIMCard",
+      "support_background_test": false
+    },
+    {
+      "showName": "KeyPad",
+      "paramconfig": {
+        "keyCode": [
+          "VOLUME_UP",
+          "VOLUME_DOWN",
+          "POWER"
+        ]
+      }
+    },
+	{
+      "showName": "TpOpenShort"
+    },
+    {
+      "showName": "LCD",
+      "paramconfig": {
+        "auto_switch": false,
+        "special_backlight_frame_rate":false,
+        "lcd_pic": [
+          "Color_R",
+          "Color_G",
+          "Color_B"
+        ]
+      }
+    },
+    {
+      "showName": "TouchScreen"
+    },
+    {
+      "showName": "LightTEST",
+      "paramconfig": {
+        "Light": [
+          {
+            "type": "flashlight",
+            "name": "MainFlashlight",
+            "id": 0,
+            "method": 1
+          },
+          {
+            "type": "backlight",
+            "name": "Backlight",
+            "brightness": [
+              10,
+              128,
+              255
+            ]
+          },
+          {
+            "type": "infraredled",
+            "name": "InfraredLed",
+            "id": 0
+          }
+        ]
+      }
+    },
+    {
+      "showName": "MainCamera"
+    },
+    {
+      "showName": "WideCamera"
+    },
+    {
+      "showName": "MacroCamera"
+    },
+    {
+      "showName": "FrontCamera"
+    },
+    {
+      "showName": "Charge"
+    },
+    {
+      "showName": "WlanAP"
+    },
+    {
+      "showName": "WlanAddress"
+    },
+    {
+      "showName": "BluetoothDevice"
+    },
+    {
+      "showName": "BluetoothAddress"
+    },
+    {
+      "showName": "GPS"
+    },
+    {
+      "showName": "OTG",
+      "paramconfig": {
+        "support_udisk": true,
+        "is_show_storage": true,
+        "support_typec": true,
+        "support_mouse": true
+      }
+    },
+    {
+      "showName": "Magnetic"
+    },
+    {
+      "showName": "Accelerometer"
+    },
+    {
+      "showName": "Gyroscope"
+    },
+    {
+      "showName": "Optical"
+    },
+    {
+      "showName": "Proximity"
+    },
+    {
+      "showName": "TopSpeaker"
+    },
+	{
+      "showName": "BottomSpeaker"
+    },
+    {
+      "showName": "Receiver"
+    },
+    {
+      "showName": "MainMicToHeadPhone"
+    },
+    {
+      "showName": "SubMicToHeadPhone"
+    },
+    {
+      "showName": "HeadSet"
+    },
+    {
+      "showName": "fingerprint",
+      "action": "com.mmigroup.action.ThreeAppTest",
+      "support": true,
+      "automatic": true,
+      "paramconfig": {
+        "pkg": "com.goodix.fingerprint.setting",
+        "cls": "com.goodix.fingerprint.setting.CITTestActivity",
+        "req_code":"20000",
+        "testitem_name": "fingerprint_test",
+        "result_passcode": "1",
+        "extra_info": {
+          "model_test": "true"
+        },
+        "auto_exit": false
+      }
+    },
+    {
+      "showName": "fingerprint_enroltest"
+    },
+    {
+      "showName": "Vibrator"
+    },
+    {
+      "showName": "NFC"
+    },
+    {
+      "showName": "Sar"
+    }
+  ]
+}

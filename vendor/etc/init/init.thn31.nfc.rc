@@ -1,0 +1,44 @@
+# Copyright (C) 2023 Tsingteng MicroSystem
+#
+# All rights are reserved. Reproduction in whole or in part is
+# prohibited without the written consent of the copyright owner.
+#
+# Tsingteng reserves the right to make changes without notice at any time.
+#
+# Tsingteng makes no warranty, expressed, implied or statutory, including but
+# not limited to any implied warranty of merchantability or fitness for any
+# particular purpose, or that the use will not infringe any third party patent,
+# copyright or trademark. Tsingteng must not be liable for any loss or damage
+# arising from its use.
+
+on post-fs
+    insmod /vendor/lib/modules/tms_device_modules.ko
+
+on boot
+    mkdir /data/vendor/nfc_socket 0770 nfc nfc
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    wait /sys/nfc/chip_name
+    chmod 0660 /dev/tms_nfc
+    chown nfc nfc /dev/tms_nfc
+    chown nfc nfc /sys/nfc/chip_name
+
+#/odm/etc/vintf for o16 nfc one binary
+# o16 S99016AA1-cn   S99016MA1-cn  S99116AA1-global  S99116IA1-global S99016EA1-in
+# o16p S99116EA1-global   S99016IA1-in
+on early-init && property:ro.boot.hwc=CN
+    setprop ro.boot.product.hardware.sku hcesimese_dsds
+    setprop ro.vendor.se.type eSE,HCE,UICC
+on early-init && property:ro.boot.hwc=Global && property:ro.boot.multisim=dsds
+    setprop ro.boot.product.hardware.sku hcesim_dsds
+    setprop ro.vendor.se.type HCE,UICC
+    setprop persist.radio.multisim.config ${ro.boot.multisim}
+    setprop ro.vendor.nfc.dispatch_optim 2
+on early-init && property:ro.boot.hwc=Global && property:ro.boot.multisim=ss
+    setprop ro.boot.product.hardware.sku hcesim_ss
+    setprop ro.vendor.se.type HCE,UICC
+    setprop persist.radio.multisim.config ${ro.boot.multisim}
+    setprop ro.vendor.nfc.dispatch_optim 2
+on early-init && property:ro.boot.hwc=India
+    setprop ro.boot.product.hardware.sku nonfc_dsds

@@ -1,0 +1,32 @@
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.odm
+    interface aidl android.hardware.biometrics.fingerprint.IFingerprint/default
+    class late_start
+    user system
+    group system drmrpc diag input uhid
+    seclabel u:r:hal_fingerprint_default:s0
+    capabilities SYS_NICE
+
+
+
+on boot
+    chmod 0666 /dev/xiaomi-fp
+    chown system system /dev/xiaomi-fp
+    chmod 0666 /dev/input/event5
+
+
+
+on post-fs-data
+    mkdir /data/vendor/fpc 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /data/vendor/fingerprint 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
+    mkdir /mnt/vendor/persist/fpc 0770 system system
+
+
+on property:vendor.fps_hal.restartimes=max
+    stop vendor.fps_hal
+
+on property:vendor.fp.dummy.dfs=*
+     stop vendor.fps_hal
+     start vendor.fps_hal

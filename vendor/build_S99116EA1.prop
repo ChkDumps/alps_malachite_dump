@@ -1,0 +1,10 @@
+
+ro.product.vendor.brand=POCO
+ro.product.vendor.name=malachitep_global
+ro.product.vendor.device=malachite
+ro.vendor.build.fingerprint=POCO/malachitep_global/malachite:15/UP1A.231005.007/OS3.0.10.0.WOOMIXM:user/release-keys
+ro.product.vendor.model=24095PCADG
+ro.product.vendor.marketname=POCO X7
+ro.product.board=malachite
+ro.bootimage.build.fingerprint=POCO/malachitep_global/malachite:15/UP1A.231005.007/OS3.0.10.0.WOOMIXM:user/release-keys
+

@@ -1,0 +1,10 @@
+
+ro.product.vendor.brand=Redmi
+ro.product.vendor.name=malachite
+ro.product.vendor.device=malachite
+ro.vendor.build.fingerprint=Redmi/malachite/malachite:15/UP1A.231005.007/OS3.0.10.0.WOOMIXM:user/release-keys
+ro.product.vendor.model=24090RA29C
+ro.product.vendor.marketname=Redmi Note 14 Pro
+ro.product.board=malachite
+ro.bootimage.build.fingerprint=Redmi/malachite/malachite:15/UP1A.231005.007/OS3.0.10.0.WOOMIXM:user/release-keys
+

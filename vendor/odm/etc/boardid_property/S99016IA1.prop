@@ -1,0 +1,7 @@
+ro.product.wt.boardid=S99016IA1
+ro.miui.support_fingerprint=TRUE
+ro.product.subproject=S99016IA1
+ro.product.device=malachite
+ro.product.cert=24095PCADI
+ro.product.model=24095PCADI
+ro.vendor.audio.clean_speaker=true
